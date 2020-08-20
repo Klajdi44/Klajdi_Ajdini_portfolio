@@ -69,12 +69,12 @@ img {
 }
 
 .section-header-h2 {
-  padding: 0 .7em;
+  padding: 0 .5em;
   margin: 0;
-  color: rgba(0, 0, 0, 0.6);
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   position: relative;
-  font-family: helveticaM;
+  font-family: helveticaB;
+  font-size: 2em;
 }
 
 .section-header-h2::before {
@@ -361,9 +361,10 @@ nav {
 /* skills section starts here */
 .skills-section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   align-items: center;
   justify-content: center;
+
 
 }
 
@@ -379,16 +380,24 @@ nav {
 
 /* tablet viewport mediaquerry********************/
 @media screen and (min-width: 600px) {
-  .infoAboutProjectImg {
-    left: 2%;
-    top: 75%;
 
+  /* sections  */
+  .sections {
+    padding: 2em 4em;
   }
+
+  .section-header-h2 {
+    padding: 0 2em;
+  }
+
+  /* end ofsections  */
 
 
   .about-me img {
     max-width: 50%;
   }
+
+
 
 
 }
@@ -469,10 +478,25 @@ nav {
   }
 
 
-  /* portfolio starts here */
+  /* portfolio section starts here */
+  /* TODO: */
+
+  
 
 
 
+  /* portfolio ends here */
+
+
+
+  /* contact starts here */
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* contact ends here */
 
   /* Desktop viewport mediaquerry********************/
   @media screen and (min-width: 1024px) {
