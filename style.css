@@ -58,9 +58,70 @@ body {
   overflow-x: hidden;
 }
 
+
+
 img {
   max-width: 100%;
 }
+
+.sections {
+  padding: 1em;
+}
+
+.section-header-h2 {
+  padding: 0 .7em;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.6);
+  letter-spacing: 3px;
+  position: relative;
+  font-family: helveticaM;
+}
+
+.section-header-h2::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 10%;
+  background: var(--secondary-color);
+  bottom: -30%;
+}
+
+/* buttons */
+.btn-span {
+  line-height: 150%;
+  font-size: 20px;
+  font-family: helveticaM;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 4px;
+}
+
+.btn {
+  padding: 10px 25px;
+  font-size: .9em;
+  position: relative;
+  margin-top: 2em;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 5%;
+  background: var(--secondary-color);
+}
+
+.btn:active {
+  transform: scale(.9);
+}
+
+/* end of buttons */
+
 
 /* end of global values */
 
@@ -252,29 +313,8 @@ nav {
 
 /* portfolio section starts here */
 
-#portfolio {
-  padding: 1em;
-}
-
-.portfolio-header-h2 {
-  padding: 0 .7em;
-  margin: 0;
-  color: rgba(0, 0, 0, 0.6);
-  letter-spacing: 7px;
-  position: relative;
-  font-family: helveticaM;
-}
-
-.portfolio-header-h2::before {
-  content: '';
-  position: absolute;
-  width: 100px;
-  height: 10%;
-  background: var(--secondary-color);
-  bottom: -30%;
 
 
-}
 
 .project-img {
   height: 400px;
@@ -287,55 +327,55 @@ nav {
 
 }
 
-
-
-.project-description {}
-
 .project-description h2 {
   font-size: 2.3rem;
 
 }
 
-/* buttons */
-.btn-span {
-  line-height: 150%;
-  font-size: 20px;
-  font-family: helveticaM;
-  color: rgba(0, 0, 0, 0.5);
-  margin: 4px;
-
-
-}
-
-.btn {
-  padding: 10px 25px;
-  font-size: .9em;
-  position: relative;
-  margin-top: 2em;
-  background: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-
-}
-
-.btn::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 5%;
-  background: var(--secondary-color);
-}
-
-
-
-
-
-
-
 /* portfolio section ends here */
+
+/* About me section starts here */
+
+.about-h2 {
+  margin-top: 3em;
+  margin-bottom: .5em;
+}
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me img {
+  max-width: 80%;
+  height: auto;
+  margin: 2em 0;
+  filter: grayscale(100%);
+}
+
+/* about me section ends here */
+
+
+
+/* skills section starts here */
+.skills-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+  align-items: center;
+  justify-content: center;
+
+}
+
+/* skills section ends here */
+
+
+/* contact section ends here */
+
+
+
+/* contact section ends here */
+
 
 /* tablet viewport mediaquerry********************/
 @media screen and (min-width: 600px) {
@@ -343,6 +383,11 @@ nav {
     left: 2%;
     top: 75%;
 
+  }
+
+
+  .about-me img {
+    max-width: 50%;
   }
 
 
@@ -425,40 +470,24 @@ nav {
 
 
   /* portfolio starts here */
-  .portfolio {
-    margin: 0 15%;
+
+
+
+
+  /* Desktop viewport mediaquerry********************/
+  @media screen and (min-width: 1024px) {
+    .nav-links {
+      width: 30%;
+    }
+
+
+    .heroSection h1 {
+      font-size: 5rem;
+    }
+
+    .heroSection h2 {
+      font-size: 7rem;
+      letter-spacing: .4em;
+    }
+
   }
-
-  img {
-    max-width: 100%;
-  }
-
-  .gray {
-    filter: grayscale(100%);
-    transition: .5s ease-out;
-  }
-
-  .gray:hover {
-    filter: grayscale(0);
-  }
-}
-
-
-
-/* Desktop viewport mediaquerry********************/
-@media screen and (min-width: 1024px) {
-  .nav-links {
-    width: 30%;
-  }
-
-
-  .heroSection h1 {
-    font-size: 5rem;
-  }
-
-  .heroSection h2 {
-    font-size: 7rem;
-    letter-spacing: .4em;
-  }
-
-}
