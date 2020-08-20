@@ -481,7 +481,26 @@ nav {
   /* portfolio section starts here */
   /* TODO: */
 
-  
+.sections{
+  padding: 2em .9em;
+}
+
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: " description imgage";
+    grid-gap:2em;
+  }
+
+  .project-description {
+    grid-area: description;
+    margin-top: 4em;
+    
+  }
+
+  .project-img {
+    grid-area: imgage;
+  }
 
 
 
