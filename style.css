@@ -102,6 +102,7 @@ img {
   margin-top: 2em;
   background: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 1s ease;
 }
 
 .btn::before {
@@ -268,8 +269,9 @@ nav {
   font-weight: 100;
   color: rgba(0, 0, 0, 0.5);
   font-size: 1.6rem;
-  font-family: helveticaM;
+  font-family: helveticaB;
   letter-spacing: 5px;
+
 }
 
 
@@ -407,6 +409,28 @@ nav {
 
 @media screen and (min-width: 700px) {
 
+  /*** global elements */
+
+  .btn:hover {
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+
+
+  }
+
+  .btn:hover::before {
+    width: 100%;
+    transition: all .5s ease-in-out;
+    border: 0;
+    z-index: -1;
+
+
+  }
+
+  /*** global elements */
+
+
+  /* nav starts here */
+
   .burger {
     display: none;
   }
@@ -466,7 +490,7 @@ nav {
   .heroSection h2 {
     letter-spacing: .4em;
     position: absolute;
-    top: 5%;
+    top: 3%;
     left: 50%;
     transform: translate(-50%, 50%);
     font-size: 4rem;
@@ -474,63 +498,96 @@ nav {
     font-weight: 900;
     filter: drop-shadow(10px 10px 10px rgb(190, 190, 190));
     opacity: .4;
+    font-family: helveticaB;
 
   }
 
 
   /* portfolio section starts here */
   /* TODO: */
+  body {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 
-.sections{
-  padding: 2em .9em;
-}
+
+  .section-header-h2 {
+    font-size: 3em;
+    padding: 0 .3em;
+  }
+
+  .sections {
+    padding: 2em .9em;
+  }
 
   .projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: " description imgage";
-    grid-gap:2em;
+    grid-gap: 2em;
   }
 
   .project-description {
     grid-area: description;
     margin-top: 4em;
-    
+
   }
+
+  .project-description p {
+    max-width: 45ch;
+  }
+
 
   .project-img {
     grid-area: imgage;
   }
 
-
-
   /* portfolio ends here */
 
+  /* About me starts  here */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+  .section-description {
+    margin-top: 5em;
+  }
+
+
+  /* About me ends  here */
 
 
   /* contact starts here */
 
   .contact-grid {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
+    max-width: 700px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
-  /* contact ends here */
+}
 
-  /* Desktop viewport mediaquerry********************/
-  @media screen and (min-width: 1024px) {
-    .nav-links {
-      width: 30%;
-    }
+/* contact ends here */
 
-
-    .heroSection h1 {
-      font-size: 5rem;
-    }
-
-    .heroSection h2 {
-      font-size: 7rem;
-      letter-spacing: .4em;
-    }
-
+/* Desktop viewport mediaquerry********************/
+@media screen and (min-width: 1024px) {
+  .nav-links {
+    width: 30%;
   }
+
+
+  .heroSection h1 {
+    font-size: 5rem;
+  }
+
+  .heroSection h2 {
+    font-size: 7rem;
+    letter-spacing: .4em;
+  }
+
+}
