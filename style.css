@@ -5,10 +5,11 @@
   box-sizing: border-box;
 }
 
-/* html,body{
+html,
+body {
   overflow-x: hidden;
   scroll-behavior: smooth;
-} */
+}
 
 /* start of global values */
 /* fonts */
@@ -238,7 +239,36 @@ nav {
 
 }
 
+/* cubes and animation of cubes */
+.mysquare {
+  position: absolute;
+  pointer-events: none;
+  background: #fff;
+  filter: drop-shadow(10px 10px 15px rgba(190, 190, 190, 0.7));
+  animation: animate 5s linear infinite;
+  z-index: 0;
+}
 
+@keyframes animate {
+  0% {
+    transform: scale(0) translateY(0) rotate(0deg);
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1) translateY(-500%) rotate(360deg);
+  }
+
+}
+
+/*cubes and animation of cubes ends here */
 
 /*hero starts here mobile version */
 
@@ -366,8 +396,8 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 2em;
- 
-  
+
+
 }
 
 /* skills section ends here */

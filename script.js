@@ -19,7 +19,7 @@ const navOpen = () => {
         link.style.animation = ""
       } else {
         //else add this animation
-        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7+ 0.4 }s`
+        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.4}s`
       }
     });
 
@@ -34,3 +34,31 @@ navOpen();
 //End of function to open the nav
 
 console.log("terminal is working");
+
+//cubes 
+const createCube = () => {
+  //get her section
+  const heroSection = document.getElementById('hero');
+  //create squares
+  const square = document.createElement('span');
+  //give a class to the square
+  square.classList.add('mysquare');
+  //sizes
+  let size = Math.random() * 50;
+  square.style.width = 20 + size + 'px';
+  square.style.height = 20 + size + 'px';
+  //
+  square.style.top = Math.random() * innerHeight + 'px';
+  //
+  square.style.left = Math.random() * innerWidth + 'px';
+  //append the cubes to hero
+
+  heroSection.appendChild(square);
+  //set the timeout for cubes to dissapear
+  setTimeout(() => {
+    square.style.display = 'none';
+  }, 5000);
+
+}
+// create new cubes every amount of time given
+setInterval(createCube, 1000);
