@@ -15,10 +15,10 @@
       <img src="./images/logo Klajdi.png" alt="Klajdi Ajdini Logo">
     </div>
     <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Portfolio</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href=".#hero">Home</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
     <!-- burgerMenu here -->
     <div class="burger">
@@ -33,7 +33,6 @@
 
 <body>
 
-
   <!-- Bottom navigation that appears on mobile only -->
 
   <!-- <div class="bot-navigation">
@@ -47,7 +46,7 @@
   <!-- Hero starts here -->
 
 
-  <div class="heroSection">
+  <div class="heroSection" id='hero'>
 
     <div class="h1h2wrapper">
       <h2>WebDev.</h2>
@@ -65,7 +64,7 @@
   <!-- Description part -->
 
   <h2 class='section-header-h2'>Projects</h2>
-  <section class='sections'>
+  <section class='sections' id='portfolio'>
     <div class='projects'>
 
       <!-- The picture part -->
@@ -138,7 +137,7 @@
 
   <h2 class='section-header-h2 about-h2'>About me</h2>
   <!-- start of About me section-->
-  <section class='sections '>
+  <section class='sections' id='about'>
     <div class="about-grid">
       <div class="about-me">
         <img src="./images/IMG_6246.png" alt="Klajdi Ajdini">
@@ -160,32 +159,41 @@
 
 
   <h2 class='section-header-h2 about-h2'>Skills</h2>
-  <section class="sections skills-section">
-
-    <div class='skills-img'>
-      <i class="fab fa-html5 fa-4x"></i>
+  <section class="sections skills-section" id='skills'>
 
 
-      <i class="fab fa-css3-alt fa-4x"></i>
-
-
-      <i class="fab fa-sass fa-4x"></i>
-
-
-      <i class="fab fa-js fa-4x"></i>
-
-      <i class="fab fa-node-js fa-4x"></i>
-
-
-      <i class="fab fa-react fa-4x"></i>
-
-      <i class="fab fa-github-square fa-4x"></i>
-      <p>And growing...</p>
+    <div> <i class="fab fa-html5 fa-4x"></i>
+      <p>Html 5</p>
     </div>
+
+
+    <div> <i class="fab fa-css3-alt fa-4x"></i>
+      <p>Css 3</p>
+    </div>
+
+    <div> <i class="fab fa-sass fa-4x"></i>
+      <p>Sass</p>
+    </div>
+
+    <div> <i class="fab fa-js fa-4x"></i>
+      <p>Javascript</p>
+    </div>
+    <div> <i class="fab fa-node-js fa-4x"></i>
+      <p>Node.js</p>
+    </div>
+
+    <div> <i class="fab fa-react fa-4x"></i>
+      <p>React</p>
+    </div>
+    <div> <i class="fab fa-github-square fa-4x">
+        <p>Git/Github</p>
+      </i>
+    </div>
+    <p>And growing... </p>
   </section>
 
   <h2 class='section-header-h2 about-h2'>Contact</h2>
-  <section class="sections contact-grid">
+  <section class="sections contact-grid" id='contact'>
     <span>
       <h3>Location:</h3>
       <p>Copenhagen, Denmark</p>
@@ -216,10 +224,6 @@
 
     </span>
 
-
-
-
-
   </section>
 
 
@@ -231,7 +235,6 @@
 
 
 
-  <script src="https://kit.fontawesome.com/a3d8ac9e2e.js" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/a3d8ac9e2e.js" crossorigin="anonymous"></script>
   <script src="script.js"></script>
 
