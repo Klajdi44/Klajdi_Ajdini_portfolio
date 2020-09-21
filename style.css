@@ -136,8 +136,9 @@ nav {
   background-color: #000;
   align-items: center;
   min-height: 8vh;
-
-
+  position: fixed;
+  width: 100%;
+  z-index: 5;
 }
 
 
@@ -610,7 +611,7 @@ nav {
   /* Hero section starts here */
   .heroSection h1 {
     font-size: 5rem;
-    transform: translateY(1em);
+    transform: translateY(2em);
   }
 
   .heroSection h2 {

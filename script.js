@@ -56,6 +56,9 @@ const createCube = () => {
   heroSection.appendChild(square);
   //set the timeout for cubes to dissapear
   setTimeout(() => {
+    square.style.opacity = '.1';
+  }, 4000);
+  setTimeout(() => {
     square.style.display = 'none';
   }, 5000);
 
