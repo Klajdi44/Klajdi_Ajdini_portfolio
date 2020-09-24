@@ -183,12 +183,14 @@ nav {
 }
 
 .burger div {
-  width: 25px;
+  width: 30px;
   height: 3px;
   background: white;
   margin: 5px;
   transition: all 0.3s ease;
 }
+.burger .line2{
+  width: 20px;}
 
 /* animation for the links of navigation ********************/
 @keyframes navLinkFade {
