@@ -44,7 +44,7 @@ const createCube = () => {
   //give a class to the square
   square.classList.add('mysquare');
   //sizes
-  let size = Math.random() * 50;
+  let size = Math.floor(Math.random() * 50);
   square.style.width = 20 + size + 'px';
   square.style.height = 20 + size + 'px';
   //
@@ -52,6 +52,10 @@ const createCube = () => {
   //
   square.style.left = Math.random() * innerWidth + 'px';
   //append the cubes to hero
+  const Colors = ['#000','#ccec3f','#fff'];
+  const randomColor = Math.floor(Math.random() * Colors.length);
+
+ square.style.background =  Colors[randomColor];
 
   heroSection.appendChild(square);
   //set the timeout for cubes to dissapear
@@ -64,4 +68,4 @@ const createCube = () => {
 
 }
 // create new cubes every amount of time given
-setInterval(createCube, 1000);
+setInterval(createCube, 1500);
