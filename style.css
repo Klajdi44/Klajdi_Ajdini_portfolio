@@ -338,7 +338,7 @@ to{
 /* hero ends here mobile version */
 
 /* portfolio section starts here */
-.project-imgHogw,.project-imgLiss,.project-imgAnima{
+.project-imgHogw,.project-imgLiss,.project-imgAnima,.project-imgGameStation{
   height: 400px;
   width: 100%;
   margin: 0 auto;
@@ -363,9 +363,12 @@ to{
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* .project-img4{
-  
-} */
+
+.project-imgGameStation{
+  background: url(./images/gameStation.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 .project-description h2 {
   font-size: 2.3rem;
