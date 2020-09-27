@@ -725,8 +725,7 @@ to{
     font-size: 17rem;
   }
   .landingImg{
-    max-width: 55%;
-    justify-self: flex-start;
+    max-width: 45%;
   }
   .arrowDown{
     top: 65%;
