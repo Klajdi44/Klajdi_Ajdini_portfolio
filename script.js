@@ -77,9 +77,41 @@ setInterval(createCube, 1500);
 
 // gsap
 
-gsap.from(".hog" , {
+gsap.to(".landingImg" , {
   scrollTrigger:{
-    trigger:".hog",
+    trigger:".section-header-h2",
+    scrub:true
+  },
+   duration:1, y:30, opacity:'-1.6'
+});
+
+gsap.from(".project1" , {
+  scrollTrigger:{
+    trigger:".project1",
+  },
+  y:300, duration:1, opacity:0
+});
+gsap.from(".project2" , {
+  scrollTrigger:{
+    trigger:".project2",
+  },
+  y:300, duration:1, opacity:0
+});
+gsap.from(".project3" , {
+  scrollTrigger:{
+    trigger:".project3",
+  },
+  y:300, duration:1, opacity:0
+});
+gsap.from(".project4" , {
+  scrollTrigger:{
+    trigger:".project4",
+  },
+  y:300, duration:1, opacity:0
+});
+gsap.from(".skills-section" , {
+  scrollTrigger:{
+    trigger:".skills-section",
   },
   y:300, duration:1, opacity:0
 });
