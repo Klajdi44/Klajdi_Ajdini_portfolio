@@ -338,7 +338,7 @@ to{
 /* hero ends here mobile version */
 
 /* portfolio section starts here */
-.project-imgHogw,.project-imgLiss,.project-imgAnima,.project-img4{
+.project-imgHogw,.project-imgLiss,.project-imgAnima{
   height: 400px;
   width: 100%;
   margin: 0 auto;
@@ -706,4 +706,58 @@ to{
     font-size: 10.5rem;
 
   }
+}
+
+@media screen and (min-width: 2000px){
+  /* landing screen */
+
+  .heroWrapper{
+    margin-top: 15em;
+  }
+  .heroSection{
+    height: 80vh;
+  }
+  .heroSection h1 {
+    font-size: 6em;
+  }
+  .heroSection h2{
+    top: -8%;
+    font-size: 17rem;
+  }
+  .landingImg{
+    max-width: 55%;
+    justify-self: flex-start;
+  }
+  .arrowDown{
+    top: 65%;
+  }
+
+ /* nav bar */
+ .nav-links{
+  width: 100%;
+  padding: 0 35em;
+  font-size: 1.4em;
+}
+
+/* project */
+.project-description h2{
+  font-size: 2.7em;
+}
+
+.project-imgHogw, .project-imgLiss, .project-imgAnima{
+  height: 500px;
+}
+
+/* global */
+  body{
+    max-width: 2000px;
+  }
+  
+   p {
+    font-size: 25px;
+  }
+.btn{
+    font-size: 20px;
+  }
+  
 }

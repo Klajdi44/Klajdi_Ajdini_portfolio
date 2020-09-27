@@ -103,12 +103,6 @@ gsap.from(".project3" , {
   },
   y:300, duration:1, opacity:0
 });
-gsap.from(".project4" , {
-  scrollTrigger:{
-    trigger:".project4",
-  },
-  y:300, duration:1, opacity:0
-});
 gsap.from(".skills-section" , {
   scrollTrigger:{
     trigger:".skills-section",
