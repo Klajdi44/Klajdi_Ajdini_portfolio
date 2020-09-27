@@ -1,3 +1,13 @@
+'use strict';
+
+document.addEventListener('DOMContentLoaded', start);
+
+function start(){
+// invoke the function so it can run
+navOpen();
+}
+
+
 //function to open the nav
 const navOpen = () => {
   //get the burger menu
@@ -28,12 +38,6 @@ const navOpen = () => {
   });
 
 }
-// invoke the function so it can run
-navOpen();
-
-//End of function to open the nav
-
-console.log("terminal is working");
 
 //cubes 
 const createCube = () => {
@@ -69,3 +73,13 @@ const createCube = () => {
 }
 // create new cubes every amount of time given
 setInterval(createCube, 1500);
+
+
+// gsap
+
+gsap.from(".hog" , {
+  scrollTrigger:{
+    trigger:".hog",
+  },
+  y:300, duration:1, opacity:0
+});

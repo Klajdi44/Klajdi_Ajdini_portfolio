@@ -281,12 +281,10 @@ nav {
   justify-content: flex-start;
   height: 93vh;
   flex-direction: column;
-
+  animation: fade 1.5s  ease-in-out;
 }
 
-.heroSection h1,
-.heroSection h2 {
-  animation: scrollFromRight 1s ease-in-out;
+.heroSection h1 {
   margin: .2em 0;
 }
 
@@ -333,29 +331,25 @@ nav {
 }
 
 
-@keyframes scrollFromRight {
-  from {
-    transform: translateX(150%);
-    opacity: 0;
-  }
+@keyframes fade {
+to{
+  transform: translateY(0);
+  opacity: 1;
+}from{
+  transform: translateY(3em);
+  opacity: 0;
+}
 }
 
 /* hero ends here mobile version */
 
-
 /* portfolio section starts here */
-
-
-
-
 .project-imgHogw,.project-imgLiss,.project-imgAnima,.project-img4{
   height: 400px;
   width: 100%;
   margin: 0 auto;
   margin: 1em 0;
    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-   border-radius: 15px;
-
 }
 .project-imgHogw{
   background: url(./images/hogwarts.png);
