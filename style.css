@@ -606,13 +606,19 @@ to{
   .section-description {
     margin-top: 5em;
   }
-
-
   /* About me ends  here */
+
+  /* skills starts here */
+  .skills-section > div{
+    transition: all 1s ease;
+  }
+  .skills-section > div:hover{
+    transform:  scale(1.2);
+
+  }
 
 
   /* contact starts here */
-
   .contact-grid {
     /* display: grid;
     grid-template-columns: 1fr 1fr;
