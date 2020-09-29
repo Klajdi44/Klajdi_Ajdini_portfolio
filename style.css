@@ -222,15 +222,21 @@ nav {
 .bot-navigation {
   position: fixed;
   bottom: 0;
-  height: 100px;
+  height: 60px;
   background-color: #fff;
   color: #000;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  z-index: 4;
 }
+.bot-navigation a , .bot-navigation i{
+  text-decoration: none;
+  color: #000;
 
+
+}
 .bot-navigation div:active {
   transform: scale(.9);
 }
@@ -627,6 +633,9 @@ to{
     padding: 0 10em;
   }
 
+     button{
+       cursor: pointer;
+     }
   /* Hero section starts here */
 
   .heroSection h1 {
