@@ -114,6 +114,8 @@ img {
   height: 100%;
   width: 5%;
   background: var(--secondary-color);
+  transition: all 1s ease;
+  z-index: -1;
 }
 
 .btn:active {
@@ -189,8 +191,10 @@ nav {
   margin: 5px;
   transition: all 0.3s ease;
 }
-.burger .line2{
-  width: 20px;}
+
+.burger .line2 {
+  width: 20px;
+}
 
 /* animation for the links of navigation ********************/
 @keyframes navLinkFade {
@@ -231,12 +235,15 @@ nav {
   justify-content: space-around;
   z-index: 4;
 }
-.bot-navigation a , .bot-navigation i{
+
+.bot-navigation a,
+.bot-navigation i {
   text-decoration: none;
   color: #000;
 
 
 }
+
 .bot-navigation div:active {
   transform: scale(.9);
 }
@@ -285,9 +292,10 @@ nav {
   height: 100vh;
   margin: 0 0 3em 1em;
 }
-.landingImg{
-max-width: 90%;
-margin-top: 1.5em;
+
+.landingImg {
+  max-width: 90%;
+  margin-top: 1.5em;
 }
 
 .heroSection h2 {
@@ -301,9 +309,9 @@ margin-top: 1.5em;
 
 }
 
-.heroWrapper{
+.heroWrapper {
   margin-top: 9em;
-  animation: fade 1.5s  ease-in-out;
+  animation: fade 1.5s ease-in-out;
 
 }
 
@@ -332,31 +340,38 @@ margin-top: 1.5em;
 
 
 @keyframes fade {
-to{
-  transform: translateY(0);
-  opacity: 1;
-}from{
-  transform: translateY(3em);
-  opacity: 0;
-}
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  from {
+    transform: translateY(3em);
+    opacity: 0;
+  }
 }
 
 /* hero ends here mobile version */
 
 /* portfolio section starts here */
-.project-imgHogw,.project-imgLiss,.project-imgAnima,.project-imgGameStation{
+.project-imgHogw,
+.project-imgLiss,
+.project-imgAnima,
+.project-imgGameStation {
   height: 400px;
   width: 100%;
   margin: 0 auto;
   margin: 1em 0;
-   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
-.project-imgHogw{
+
+.project-imgHogw {
   background: url(./images/hogwarts.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
-.project-imgLiss{
+
+.project-imgLiss {
   background: url(./images/liss.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -364,13 +379,13 @@ to{
 
 }
 
-.project-imgAnima{
+.project-imgAnima {
   background: url(./images/anima.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.project-imgGameStation{
+.project-imgGameStation {
   background: url(./images/gameStation.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -387,7 +402,7 @@ to{
 /* About me section starts here */
 
 .about-h2 {
-  margin-top:3em;
+  margin-top: 3em;
   margin-bottom: .5em;
 }
 
@@ -403,8 +418,9 @@ to{
   margin: 2em 0;
   filter: grayscale(100%);
 }
-#about{
-  animation: fade 1.5s  ease-in-out;
+
+#about {
+  animation: fade 1.5s ease-in-out;
 }
 
 /* about me section ends here */
@@ -427,7 +443,7 @@ to{
 
 /* footer starts here */
 
-.footer{
+.footer {
   width: 100%;
   height: 50px;
   margin-top: 1em;
@@ -469,7 +485,7 @@ to{
 
   .btn:hover {
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
-
+    color: rgb(62, 56, 56);
 
   }
 
@@ -540,16 +556,16 @@ to{
     height: 85vh;
   }
 
- .heroWrapper{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
- }
+  .heroWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
 
-  .landingImg{
-    max-width: 50%;    
-    }
+  .landingImg {
+    max-width: 50%;
+  }
 
   .heroSection h1 {
     font-size: 5rem;
@@ -606,14 +622,16 @@ to{
   .section-description {
     margin-top: 5em;
   }
+
   /* About me ends  here */
 
   /* skills starts here */
-  .skills-section > div{
+  .skills-section>div {
     transition: all 1s ease;
   }
-  .skills-section > div:hover{
-    transform:  scale(1.2);
+
+  .skills-section>div:hover {
+    transform: scale(1.2);
 
   }
 
@@ -639,14 +657,15 @@ to{
     padding: 0 10em;
   }
 
-     button{
-       cursor: pointer;
-     }
+  button {
+    cursor: pointer;
+  }
+
   /* Hero section starts here */
 
   .heroSection h1 {
     font-size: 5rem;
-  position: relative;
+    position: relative;
   }
 
   .heroSection h2 {
@@ -683,14 +702,15 @@ to{
   /* about section ends here */
 
 }
-@media screen and (min-width: 1280px){
+
+@media screen and (min-width: 1280px) {
   /* navbar and a tags */
 
-  .nav-links li{
-  position: relative;
+  .nav-links li {
+    position: relative;
   }
 
-  .nav-links  {
+  .nav-links {
     width: 85%;
     padding: 0 22em;
   }
@@ -706,75 +726,84 @@ to{
     transform: scaleX(0);
     transition: transform 245ms ease-in;
     transform-origin: right;
-}
+  }
 
-.nav-links li a:hover::after {
+  .nav-links li a:hover::after {
     transform: scaleX(1);
     transform-origin: left;
-}
+  }
 
-/* square in landing screen */
-  .mysquare{
+  /* square in landing screen */
+  .mysquare {
     display: block;
-  z-index: -1;  }
+    z-index: -1;
+  }
 
   /* hero section */
-  .heroSection h2{
+  .heroSection h2 {
     top: -8%;
     font-size: 10.5rem;
 
   }
 }
 
-@media screen and (min-width: 2000px){
+@media screen and (min-width: 2000px) {
   /* landing screen */
 
-  .heroWrapper{
+  .heroWrapper {
     margin-top: 15em;
   }
-  .heroSection{
+
+  .heroSection {
     height: 80vh;
   }
+
   .heroSection h1 {
     font-size: 6em;
   }
-  .heroSection h2{
+
+  .heroSection h2 {
     top: -8%;
     font-size: 17rem;
   }
-  .landingImg{
+
+  .landingImg {
     max-width: 45%;
   }
-  .arrowDown{
+
+  .arrowDown {
     top: 65%;
   }
 
- /* nav bar */
- .nav-links{
-  width: 100%;
-  padding: 0 35em;
-  font-size: 1.4em;
-}
+  /* nav bar */
+  .nav-links {
+    width: 100%;
+    padding: 0 35em;
+    font-size: 1.4em;
+  }
 
-/* project */
-.project-description h2{
-  font-size: 2.7em;
-}
+  /* project */
+  .project-description h2 {
+    font-size: 2.7em;
+  }
 
-.project-imgHogw, .project-imgLiss, .project-imgAnima{
-  height: 500px;
-}
+  .project-imgHogw,
+  .project-imgLiss,
+  .project-imgAnima {
+    height: 500px;
+  }
 
-/* global */
-  body{
+  /* global */
+  body {
     max-width: 2000px;
   }
-  
-   p {
+
+  p {
     font-size: 25px;
   }
-.btn{
+
+  .btn {
     font-size: 20px;
   }
-  
+
 }
