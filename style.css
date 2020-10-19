@@ -33,6 +33,9 @@ body {
   src: url(./fonts/HelveticaNowDisplay-ExtraBold.ttf);
 }
 
+a{
+  text-decoration: none;
+}
 /* fonts */
 
 
@@ -438,8 +441,6 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 2em;
-
-
 }
 
 /* skills section ends here */
@@ -657,6 +658,18 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .email:hover,.phone:hover{
+    color: #000;
+    transform: scale(1.1);
+    transition: all .3s ease;
+  }
+  .fa-linkedin:hover::before{
+    color:#0077B5;
+  }
+  .fa-github-square:hover::before{
+    color:#000;
   }
 
   /* Nav */
