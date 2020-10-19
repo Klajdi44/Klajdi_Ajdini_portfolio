@@ -115,3 +115,9 @@ gsap.from(".skills-section" , {
   },
   y:300, duration:1, opacity:0
 });
+gsap.from(".waves" , {
+  scrollTrigger:{
+    trigger:".waves",
+  },
+  y:100, duration:1, opacity:0
+});
