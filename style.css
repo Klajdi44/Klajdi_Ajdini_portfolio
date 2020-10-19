@@ -234,14 +234,18 @@ nav {
   align-items: center;
   justify-content: space-around;
   z-index: 4;
+  box-shadow: 20px 20px 30px  rgba(0,0,0, .4);
 }
 
 .bot-navigation a,
 .bot-navigation i {
   text-decoration: none;
   color: #000;
+}
 
-
+.bot-navigation a {
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  padding: .1em .5em;
 }
 
 .bot-navigation div:active {
