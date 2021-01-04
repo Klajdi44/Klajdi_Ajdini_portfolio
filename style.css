@@ -86,6 +86,15 @@ img {
   height: 10%;
   background: var(--secondary-color);
   bottom: -30%;
+  animation: color-wheel 5s infinite alternate;
+}
+
+@keyframes color-wheel {
+  from{
+    filter: hue-rotate(0deg);
+  }to{
+    filter: hue-rotate(360deg);
+  }
 }
 
 /* buttons */
