@@ -33,11 +33,10 @@ body {
   src: url(./fonts/HelveticaNowDisplay-ExtraBold.ttf);
 }
 
-a{
+a {
   text-decoration: none;
 }
 /* fonts */
-
 
 :root {
   --main-color: gray;
@@ -55,7 +54,6 @@ p {
   font-size: 20px;
   font-family: helveticaR;
   color: rgba(0, 0, 0, 0.6);
-
 }
 
 button {
@@ -71,7 +69,7 @@ img {
 }
 
 .section-header-h2 {
-  padding: 0 .5em;
+  padding: 0 0.5em;
   margin: 0;
   letter-spacing: 2px;
   position: relative;
@@ -90,9 +88,10 @@ img {
 }
 
 @keyframes color-wheel {
-  from{
+  from {
     filter: hue-rotate(0deg);
-  }to{
+  }
+  to {
     filter: hue-rotate(360deg);
   }
 }
@@ -108,7 +107,7 @@ img {
 
 .btn {
   padding: 10px 25px;
-  font-size: .9em;
+  font-size: 0.9em;
   position: relative;
   margin-top: 2em;
   background: transparent;
@@ -131,17 +130,18 @@ img {
 }
 
 .btn:active {
-  transform: scale(.9);
+  transform: scale(0.9);
 }
 
 /* end of buttons */
-
 
 /* end of global values */
 
 /* navigation ********************/
 .logo img {
-  height: 3em;
+  height: 2em;
+  filter: invert();
+  margin-top: 0.5em;
 }
 
 nav {
@@ -154,7 +154,6 @@ nav {
   width: 100%;
   z-index: 5;
 }
-
 
 .nav-links {
   background-color: #fff;
@@ -170,10 +169,9 @@ nav {
   transform: translateX(100%);
   list-style: none;
   text-decoration: none;
-  transition: transform .4s ease-in;
+  transition: transform 0.4s ease-in;
   z-index: 1;
   border: 1px solid rgb(198, 198, 198);
-
 }
 
 .nav-links li {
@@ -185,8 +183,6 @@ nav {
   font-size: 1.2em;
   color: #000;
 }
-
-
 
 .nav-active {
   transform: translateX(0%);
@@ -210,7 +206,6 @@ nav {
 
 /* animation for the links of navigation ********************/
 @keyframes navLinkFade {
-
   from {
     opacity: 0;
     transform: translateX(50px);
@@ -246,7 +241,7 @@ nav {
   align-items: center;
   justify-content: space-around;
   z-index: 4;
-  box-shadow: 20px 20px 30px rgba(0, 0, 0, .4);
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.4);
 }
 
 .bot-navigation a,
@@ -257,17 +252,16 @@ nav {
 
 .bot-navigation a {
   border-right: 1px solid rgba(0, 0, 0, 0.2);
-  padding: .1em .5em;
+  padding: 0.1em 0.5em;
 }
 
 .bot-navigation div:active {
-  transform: scale(.9);
+  transform: scale(0.9);
 }
 
 .bot-navigation div {
   cursor: pointer;
   font-size: 1.28em;
-
 }
 
 /* cubes and animation of cubes */
@@ -297,7 +291,6 @@ nav {
   100% {
     transform: scale(1) translateY(-500%) rotate(360deg);
   }
-
 }
 
 /*cubes and animation of cubes ends here */
@@ -321,14 +314,12 @@ nav {
 .heroSection h1 {
   font-weight: 900;
   font-size: 3rem;
-  margin: .2em 0;
-
+  margin: 0.2em 0;
 }
 
 .heroWrapper {
   margin-top: 9em;
   animation: fade 1.5s ease-in-out;
-
 }
 
 .arrowDown {
@@ -345,15 +336,12 @@ nav {
 @keyframes jump {
   to {
     transform: translateY(30px);
-
   }
 
   from {
     transform: translateY(0px);
-
   }
 }
-
 
 @keyframes fade {
   to {
@@ -392,7 +380,6 @@ nav {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
 }
 
 .project-imgAnima {
@@ -409,8 +396,7 @@ nav {
 
 .project-description h2 {
   font-size: 2.3rem;
-  margin-bottom: .2em;
-
+  margin-bottom: 0.2em;
 }
 
 /* portfolio section ends here */
@@ -419,7 +405,7 @@ nav {
 
 .about-h2 {
   margin-top: 3em;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 .about-me {
@@ -441,8 +427,6 @@ nav {
 
 /* about me section ends here */
 
-
-
 /* skills section starts here */
 .skills-section {
   display: grid;
@@ -453,7 +437,6 @@ nav {
 }
 
 /* skills section ends here */
-
 
 /* footer starts here */
 
@@ -476,10 +459,8 @@ nav {
 
 /* footer ends here */
 
-
 /* tablet viewport mediaquerry********************/
 @media screen and (min-width: 600px) {
-
   /* sections  */
   .sections {
     padding: 2em 4em;
@@ -491,38 +472,27 @@ nav {
 
   /* end ofsections  */
 
-
   .about-me img {
     max-width: 80%;
   }
-
-
 }
 
-
-
-
 @media screen and (min-width: 700px) {
-
   /*** global elements */
 
   .btn:hover {
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
     color: rgb(62, 56, 56);
-
   }
 
   .btn:hover::before {
     width: 100%;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     border: 0;
     z-index: -1;
-
-
   }
 
   /*** global elements */
-
 
   /* nav starts here */
 
@@ -533,6 +503,7 @@ nav {
   .logo img {
     height: 3em;
     margin-top: 1em;
+    filter: none;
   }
 
   nav {
@@ -549,21 +520,17 @@ nav {
     transform: translateX(0);
   }
 
-
-
   .nav-links li {
     opacity: 1;
-
   }
 
   .nav-links a {
     color: #000;
-
   }
 
   .nav-links a:hover {
     color: rgb(100, 100, 100);
-    transition: .5s ease-out;
+    transition: 0.5s ease-out;
   }
 
   .logo {
@@ -585,7 +552,6 @@ nav {
     align-items: center;
   }
 
-
   .landingImg {
     max-width: 50%;
   }
@@ -600,33 +566,30 @@ nav {
     margin: 0 auto;
   }
 
-
   .section-header-h2 {
     font-size: 3em;
-    padding: 0 .3em;
+    padding: 0 0.3em;
   }
 
   .sections {
-    padding: 2em .9em;
+    padding: 2em 0.9em;
   }
 
   .projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: " description imgage";
+    grid-template-areas: ' description imgage';
     grid-gap: 2em;
   }
 
   .project-description {
     grid-area: description;
     margin-top: 4em;
-
   }
 
   .project-description p {
     max-width: 45ch;
   }
-
 
   .project-img {
     grid-area: imgage;
@@ -639,7 +602,6 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 3em;
-
   }
 
   .section-description {
@@ -649,15 +611,13 @@ nav {
   /* About me ends  here */
 
   /* skills starts here */
-  .skills-section>div {
+  .skills-section > div {
     transition: all 1s ease;
   }
 
-  .skills-section>div:hover {
+  .skills-section > div:hover {
     transform: scale(1.2);
-
   }
-
 
   /* contact starts here */
   .contact-grid {
@@ -669,20 +629,21 @@ nav {
     justify-content: space-between;
   }
 
-  .email:hover,.phone:hover{
+  .email:hover,
+  .phone:hover {
     color: #000;
     transform: scale(1.1);
-    transition: all .3s ease;
+    transition: all 0.3s ease;
   }
-  .fa-linkedin:hover::before{
-    color:#0077B5;
+  .fa-linkedin:hover::before {
+    color: #0077b5;
   }
-  .fa-github-square:hover::before{
-    color:#000;
+  .fa-github-square:hover::before {
+    color: #000;
   }
 
   /* Nav */
-  .waves{
+  .waves {
     display: block;
   }
 }
@@ -708,7 +669,7 @@ nav {
   }
 
   .heroSection h2 {
-    letter-spacing: .4em;
+    letter-spacing: 0.4em;
     position: absolute;
     top: -3%;
     left: 50%;
@@ -717,7 +678,7 @@ nav {
     color: #fff;
     font-weight: 900;
     filter: drop-shadow(10px 10px 10px rgb(190, 190, 190));
-    opacity: .4;
+    opacity: 0.4;
     font-family: helveticaB;
     width: 100%;
     text-align: center;
@@ -731,7 +692,6 @@ nav {
 
   /* Hero section ends here */
 
-
   /* about section starts here */
 
   .about-me img {
@@ -739,7 +699,6 @@ nav {
   }
 
   /* about section ends here */
-
 }
 
 @media screen and (min-width: 1280px) {
@@ -782,7 +741,6 @@ nav {
   .heroSection h2 {
     top: -8%;
     font-size: 10.5rem;
-
   }
 }
 
@@ -844,5 +802,4 @@ nav {
   .btn {
     font-size: 20px;
   }
-
 }
