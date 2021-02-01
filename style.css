@@ -361,7 +361,9 @@ nav {
 .project-imgHogw,
 .project-imgLiss,
 .project-imgAnima,
-.project-imgGameStation {
+.project-imgGameStation,
+.project-dashboard,
+.project-bar {
   height: 400px;
   width: 100%;
   margin: 0 auto;
@@ -390,6 +392,17 @@ nav {
 
 .project-imgGameStation {
   background: url(./images/gameStation.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project-dashboard {
+  background: url(./images/DashBoard.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.project-bar {
+  background: url(./images/bar.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
