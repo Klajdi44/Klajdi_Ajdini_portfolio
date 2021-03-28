@@ -5,6 +5,20 @@ document.addEventListener('DOMContentLoaded', start);
 function start() {
   // invoke the function so it can run
   navOpen();
+
+  const nav = document.querySelector('nav');
+  let prevScrollpos = window.pageYOffset;
+  window.onscroll = function () {
+    const currentScrollPos = window.pageYOffset;
+    if (window.matchMedia('(min-width: 765px)').matches) {
+      if (prevScrollpos > currentScrollPos) {
+        nav.style.top = '0';
+      } else {
+        nav.style.top = '-100px';
+      }
+      prevScrollpos = currentScrollPos;
+    }
+  };
 }
 
 //function to open the nav
